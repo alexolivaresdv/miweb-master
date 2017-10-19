@@ -40,7 +40,7 @@ class Welcome extends CI_Controller {
 		echo "Nombre: ".$name."  Apellido: ".$lastname;
 		//Aqui estamos creando el array
 		$data = array('nombre' => $this->input->post('nombre1'),'apellido' => $this->input->post('apellido1') );
-
-		//$this->form_model->guardar($data);
+		//Aqui se llama la funcion para guardar en la base de BD.
+		$this->form_model->guardar($data);
 	}
 }
